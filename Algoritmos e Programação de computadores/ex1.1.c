@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(void) {
-    char name[] = "Hello, World!";
+    char name[] = "Ola Mundo!";
     printf("%s\n", name);
     return 0;
 }
