@@ -4,10 +4,10 @@ int main(void) {
     float n1, n2;
     float adicao, subtracao, multiplicacao, divisao;
 
-    printf("Digite um numero: ");
+    printf("Digite um numero: \n");
     scanf("%f", &n1);
 
-    printf("Digite outro numero: ");
+    printf("Digite outro numero: \n");
     scanf("%f", &n2);
 
     adicao = n1 + n2;
