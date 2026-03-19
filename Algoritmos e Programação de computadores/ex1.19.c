@@ -7,9 +7,5 @@ int main(void) {
     printf("Diametro = %.2f\n", 2 * raio);
     printf("circunferencia = %.2f\n", 2 * pi * raio);
     printf("Area = %.2f\n", pi * raio * raio);
-
-
-
-
     return 0;
 }
