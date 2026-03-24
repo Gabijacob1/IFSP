@@ -4,18 +4,21 @@
 #include <raylib.h>
 int main( void ) {
   
-    int posX, posY, raio;
+    int posX, posY;
+    float raioH, raioV;
 
         printf( "x: " );
         scanf( "%d", &posX );
         printf( "y: " );
         scanf( "%d", &posY );
-        printf( "raio: " );
-        scanf( "%d", &raio );
+        printf( "raio horizontal: " );
+        scanf( "%f", &raioH );
+        printf( "raio vertical: " );
+        scanf( "%f", &raioV );
        
     SetConfigFlags( FLAG_MSAA_4X_HINT );
 
-    InitWindow( 600, 400, "Exercício Criativo 1.7" );
+    InitWindow( 600, 400, "Exercício Criativo 1.8" );
 
     SetTargetFPS( 60 );    
 
@@ -25,7 +28,7 @@ int main( void ) {
 
         ClearBackground( BLACK );
        
-         DrawCircle( posX, posY, raio, PURPLE );    
+         DrawEllipseLines( posX, posY, raioH, raioV, WHITE );    
 
         EndDrawing();
     }
