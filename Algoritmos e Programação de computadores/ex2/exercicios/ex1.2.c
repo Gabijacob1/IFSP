@@ -14,7 +14,9 @@ int main( void ) {
         scanf( "%d", &x2 );
         printf( "Digite as coordenadas y final: " );
         scanf( "%d", &y2 );
-        
+    
+    SetConfigFlags( FLAG_MSAA_4X_HINT );
+     
     InitWindow( 600, 400, "Exercício Criativo 1.2" );
 
     SetTargetFPS( 60 );    

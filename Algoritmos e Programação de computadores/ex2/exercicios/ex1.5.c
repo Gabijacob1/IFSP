@@ -15,8 +15,9 @@ int main( void ) {
         printf( "altura: " );
         scanf( "%d", &height );
        
+    SetConfigFlags( FLAG_MSAA_4X_HINT );
 
-    InitWindow( 600, 400, "Exercício Criativo 1.4" );
+    InitWindow( 600, 400, "Exercício Criativo 1.5" );
 
     SetTargetFPS( 60 );    
 

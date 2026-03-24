@@ -19,6 +19,8 @@ int main( void ) {
         
         int xtopo = (x1 + x2) / 2;
         int ytopo = y1 - altura;
+ 
+    SetConfigFlags( FLAG_MSAA_4X_HINT );
 
     InitWindow( 600, 400, "Exercício Criativo 1.3" );
 
