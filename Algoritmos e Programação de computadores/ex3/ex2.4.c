@@ -35,7 +35,5 @@ int main(void) {
         printf("Ordem Crescente: %d <= %d <= %d\n", n1, n2, n3);
     }
     
-
-
     return 0;
 }
