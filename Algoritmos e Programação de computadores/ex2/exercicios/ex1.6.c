@@ -15,7 +15,7 @@ int main( void ) {
        
     SetConfigFlags( FLAG_MSAA_4X_HINT );
 
-    InitWindow( 600, 400, "Exercício Criativo 1.6" );
+    InitWindow( 600, 400, "Exercício Criativo 1.6");
 
     SetTargetFPS( 60 );    
 
