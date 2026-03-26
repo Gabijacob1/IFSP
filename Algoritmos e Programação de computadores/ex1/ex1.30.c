@@ -12,7 +12,7 @@ int main(void) {
     printf("Valores antes da troca:\n");
     printf("Primeiro numero: %d\n", n1);
     printf("Segundo numero: %d\n", n2);
-
+    printf("\n");
     printf("Valores depois da troca:\n");
     printf("Primeiro numero: %d\n", n4);
     printf("Segundo numero: %d\n", n3);
