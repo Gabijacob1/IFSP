@@ -2,7 +2,7 @@
 # include <stdlib.h>
 int main(void) {
  float raio,pi = 3.141592;
-    printf("Digite o raio do circulo: ");
+    printf("Digite o raio do circulo: \n");
     scanf("%f", &raio);
     printf("Diametro = %.2f\n", 2 * raio);
     printf("circunferencia = %.2f\n", 2 * pi * raio);

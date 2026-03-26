@@ -2,9 +2,9 @@
 # include <stdlib.h>
 int main(void) {
     int n1, n2;
-    printf("Digite o primeiro numero: ");
+    printf("Digite o primeiro numero: \n");
     scanf("%d", &n1);
-    printf("Digite o segundo numero: ");
+    printf("Digite o segundo numero: \n");
     scanf("%d", &n2);
     int n3 = n1;
     int n4 = n2;

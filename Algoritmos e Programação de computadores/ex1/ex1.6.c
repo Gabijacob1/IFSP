@@ -15,8 +15,8 @@ int main(void) {
     
     printf("%d + %d = %d\n", n1, n2, adicao );
     printf("%d - %d = %d\n", n1, n2, subtracao);
-    printf("%d * %d = %d\n", multiplicacao);
-    printf("%d / %d = %d\n", divisao);
+    printf("%d * %d = %d\n", n1, n2, multiplicacao);
+    printf("%d / %d = %d\n", n1, n2, divisao);
 
     return 0;
 }
