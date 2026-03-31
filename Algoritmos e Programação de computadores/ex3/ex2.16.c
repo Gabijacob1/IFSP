@@ -10,7 +10,7 @@ int main(void) {
     if (n1 < 1 || n1 > 3999){
         printf("Numero invalido!");
     }
-    
+
     else{
         int milhar = n1 / 1000;
         int centena = (n1 % 1000) / 100;
@@ -19,19 +19,33 @@ int main(void) {
 
         printf("%d = ", n1);
 
-        if (milhar == 1) printf("M");
-        else if (milhar == 2) printf("MM");
-        else if (milhar == 3) printf("MMM");
+        if (milhar == 1){ 
+            printf("M");
+        } else if (milhar == 2){
+             printf("MM");
+        } else if (milhar == 3) {
+            printf("MMM");
+        }
 
-        if (centena == 1) printf("C");
-        else if (centena == 2) printf("CC");
-        else if (centena == 3) printf("CCC");
-        else if (centena == 4) printf("CD");
-        else if (centena == 5) printf("D");
-        else if (centena == 6) printf("DC");
-        else if (centena == 7) printf("DCC");
-        else if (centena == 8) printf("DCCC");
-        else if (centena == 9) printf("CM");
+        if (centena == 1){
+            printf("C");
+        } else if (centena == 2) {
+            printf("CC");
+        } else if (centena == 3) {
+            printf("CCC");
+        } else if (centena == 4) {
+            printf("CD");
+        } else if (centena == 5) {
+            printf("D");
+        } else if (centena == 6) {
+            printf("DC");
+        } else if (centena == 7) {
+            printf("DCC");
+        } else if (centena == 8) {
+            printf("DCCC");
+        } else if (centena == 9) {
+            printf("CM");
+        }
 
         if (dezena == 1) printf("X");
         else if (dezena == 2) printf("XX");
