@@ -13,19 +13,31 @@ int main(void) {
     printf("c: ");
     scanf("%f", &n3);
 
-    if (n1 == n2 && n2 == n3){
-        printf("Triangulo EQUILATERO");
+   
+    if((n1 - n2) < n3 && n3 < (n1 + n2)){
+        if ((n1 - n3) < n2 && n2 < (n1 + n3)){
+            if ((n2 - n3) < n1 && n1 < (n2 + n3)){
+                if (n1 == n2 && n2 == n3){
+                    printf("Triangulo EQUILATERO");
+                }
+                if (n1 == n2 && n2 != n3){
+                    printf("Triangulo ISOSCELES");
+                } 
+                if (n2 == n3 && n1 != n2){
+                    printf("Triangulo ISOSCELES");
+                }
+                if (n3 == n1 && n2 != n1){
+                    printf("Triangulo ISOSCELES");
+                }
+                if (n1 != n2 && n1 != n3 && n2 != n3){
+                    printf("Triangulo ESCALENO");
+                }
+            }
+        }
+    } else { 
+        printf("As medidas fornecidas dos lados nao representam um triangulo valido!");
     } 
 
-    if (n1 == n2 && n2 != n3){
-         printf("Triangulo ISOSCELES");
-    } 
-    if (n2 == n3 && n1 != n2){
-           printf("Triangulo ISOSCELES");
-    }
-    if (n3 == n1 && n2 != n1){
-        printf("Triangulo ISOSCELES");
-    }
 
     return 0;
 }
