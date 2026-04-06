@@ -1,7 +1,8 @@
 # include <stdio.h>
 # include <stdlib.h>
 int main(void) {
-    float n1, n2;
+    float n1;
+    float n2;
     printf("Digite um numero: ");
     scanf("%f", &n1);
     if (n1>=20){

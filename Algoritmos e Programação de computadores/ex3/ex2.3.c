@@ -1,7 +1,8 @@
 # include <stdio.h>
 # include <stdlib.h>
 int main(void) {
-    int n1, n2;
+    int n1;
+    int n2;
     printf("Digite um numero inteiro: ");
     scanf("%d", &n1);
     printf("Digite outro numero inteiro: ");

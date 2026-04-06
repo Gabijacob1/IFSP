@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(void) {
-    float n1, n2, n3, n4, n5, n6;
+    float n1;
+    float n2;
+    float n3;
+    float n4;
+    float n5;
+    float n6;
     printf("Digite os lados de um triangulo: \n");
     
     printf("a: ");

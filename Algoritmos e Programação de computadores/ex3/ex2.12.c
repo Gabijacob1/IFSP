@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(void){
-    int h1, h2, m1, m2;
+    int h1;
+    int h2;
+    int m1;
+    int m2;
 
     printf("Idade Homem: ");
     scanf("%d", &h1);
