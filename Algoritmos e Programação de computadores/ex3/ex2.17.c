@@ -4,7 +4,7 @@
 int main(void) {
     int n1;
     printf("Entre com um valor inteiro: ");
-    scanf("%d", &n1);
+    scanf( "%d", &n1);
 
     switch (n1)
     { 

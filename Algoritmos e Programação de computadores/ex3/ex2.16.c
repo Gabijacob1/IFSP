@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(void) {
-    int n1;
+    int n1=0;
 
     printf("Entre com um numero entre 1 e 3999: ");
     scanf("%d", &n1);
