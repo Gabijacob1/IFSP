@@ -8,7 +8,7 @@ int main(void) {
     scanf("%d", &n1);
 
     if (n1 < 1 || n1 > 3999){
-        printf("Numero invalido!");
+        printf("Numero incorreto!");
     }
 
     else{
