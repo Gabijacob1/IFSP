@@ -8,8 +8,7 @@ int main(void) {
         n3 = n1 + n2;
         n1 = n2;
         n2 = n3;
-        printf("%d ", n1
-        );
+        printf("%d ", n1);
     }
 
     return 0;
