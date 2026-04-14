@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
 
 #include <raylib.h>
 
@@ -31,14 +32,17 @@ int main( void ) {
     // configura a quantidade de quatros por segundo da engine
     SetTargetFPS( 60 ); 
 
-    int xCentro = GetScreenWidth() / 2;
-    int yCentro = GetScreenHeight() / 2;
-    int raio = 100;   
+    float xCentro = GetScreenWidth() / 2;
+    float yCentro = GetScreenHeight() / 2;
+    float raio = 100;   
+    float distancia = raio / 2;
+    float distanciaMouse = 0;
 
-    int xCentroIris = xCentro + raio / 2;
-    int yCentroIris = yCentro;
-    int raioIris = 40;
+    float xCentroIris = xCentro;
+    float yCentroIris = yCentro;
+    float raioIris = 40;
 
+    float angulo = 0;
 
     // enquanto não é sinalizado que a janela deve ser fechada
     while ( !WindowShouldClose() ) {
@@ -52,13 +56,22 @@ int main( void ) {
         /*----------------------------------------------------------------------
          * A lógica do seu desenho deve vir aqui.
          ---------------------------------------------------------------------*/
-        if ( IsMouseButtonPressed ( MOUSE_BUTTON_LEFT ) ){
-            printf( "%d, %d \n", GetMouseX(), GetMouseY() );
+        float cat1 = GetMouseX() - xCentro;
+        float cat2 = GetMouseY() - yCentro;
+        distanciaMouse = sqrt( cat1 * cat1 + cat2 * cat2 );
+        
+        if ( distanciaMouse <= distancia ) {
+            xCentroIris = GetMouseX();
+            yCentroIris = GetMouseY();
+        }else {
+            angulo = atan2( GetMouseY() - yCentro, GetMouseX() - xCentro);        
+            xCentroIris = xCentro + distancia * cos( angulo );
+            yCentroIris = yCentro + distancia * sin( angulo );
         }
-         DrawCircleLines(xCentro, yCentro, raio, BLACK);
+        
+        DrawCircleLines(xCentro, yCentro, raio, BLACK);
         DrawCircle( xCentroIris, yCentroIris, raioIris, GREEN);
         DrawCircle( xCentroIris, yCentro, raioIris / 3, BLACK);
-
 
         /*----------------------------------------------------------------------
          * A lógica do seu desenho deve terminar na linha acima.
