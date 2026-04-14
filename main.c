@@ -21,13 +21,15 @@ int main( void ) {
      *     - entrada de dados;
      *     - processamentos adicionais.
      ----------------------------------------------------*/
-    
+    int xCentro = GetScreenWidth() / 2;
+    int yCentro = GetScreenHeight() / 2;
+    int raio = 50;
     
     // ativa a suavização (antialiasing)
     SetConfigFlags( FLAG_MSAA_4X_HINT );
 
     // cria uma janela de 800 pixels de largura por 600 de altura
-    InitWindow( 800, 600, "Título da Janela" );
+    InitWindow( 800, 600, "Olhinhos" );
 
     // configura a quantidade de quatros por segundo da engine
     SetTargetFPS( 60 );    
@@ -44,7 +46,7 @@ int main( void ) {
         /*----------------------------------------------------------------------
          * A lógica do seu desenho deve vir aqui.
          ---------------------------------------------------------------------*/
-
+        DrawCircleLines(xCentro, yCentro, raio, BLACK);
 
 
         /*----------------------------------------------------------------------
