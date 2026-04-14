@@ -32,17 +32,31 @@ int main( void ) {
     // configura a quantidade de quatros por segundo da engine
     SetTargetFPS( 60 ); 
 
+    float raio = 100;   
+    float distanciaEntre = 0;
     float xCentro = GetScreenWidth() / 2;
     float yCentro = GetScreenHeight() / 2;
-    float raio = 100;   
-    float distancia = raio / 2;
-    float distanciaMouse = 0;
 
-    float xCentroIris = xCentro;
-    float yCentroIris = yCentro;
+    float xCentroO1 = xCentro - raio;
+    float yCentroO1 = yCentro;
+
+    float xCentroO2 = xCentro + raio;
+    float yCentroO2 = yCentro;
+
+    float distancia = raio / 2;
+    float distanciaMouseO1 = 0;
+    float distanciaMouseO2 = 0;
+
+    float xCentroO1Iris = xCentroO1;
+    float yCentroO1Iris = yCentroO1;
+
+    float xCentroO2Iris = xCentroO2;
+    float yCentroO2Iris = yCentroO2;
+
     float raioIris = 40;
 
-    float angulo = 0;
+    float anguloO1 = 0;
+    float anguloO2 = 0;
 
     // enquanto não é sinalizado que a janela deve ser fechada
     while ( !WindowShouldClose() ) {
@@ -56,22 +70,50 @@ int main( void ) {
         /*----------------------------------------------------------------------
          * A lógica do seu desenho deve vir aqui.
          ---------------------------------------------------------------------*/
-        float cat1 = GetMouseX() - xCentro;
-        float cat2 = GetMouseY() - yCentro;
-        distanciaMouse = sqrt( cat1 * cat1 + cat2 * cat2 );
         
-        if ( distanciaMouse <= distancia ) {
-            xCentroIris = GetMouseX();
-            yCentroIris = GetMouseY();
+        float cat1O1 = GetMouseX() - xCentroO1;
+        float cat201 = GetMouseY() - yCentroO1;
+        distanciaMouseO1 = sqrt( cat1O1 * cat1O1 + cat201 * cat201 );
+
+        float cat1O2 = GetMouseX() - xCentroO2;
+        float cat2O2 = GetMouseY() - yCentroO2;
+        distanciaMouseO2 = sqrt( cat1O2 * cat1O2 + cat2O2 * cat2O2 );
+
+        if ( distanciaMouseO1 <= distancia ) {
+            xCentroO1Iris = GetMouseX();
+            yCentroO1Iris = GetMouseY();
         }else {
-            angulo = atan2( GetMouseY() - yCentro, GetMouseX() - xCentro);        
-            xCentroIris = xCentro + distancia * cos( angulo );
-            yCentroIris = yCentro + distancia * sin( angulo );
+            anguloO1 = atan2( GetMouseY() - yCentroO1, GetMouseX() - xCentroO1);        
+            xCentroO1Iris = xCentroO1 + distancia * cos( anguloO1 );
+            yCentroO1Iris = yCentroO1 + distancia * sin( anguloO1 );
         }
         
-        DrawCircleLines(xCentro, yCentro, raio, BLACK);
-        DrawCircle( xCentroIris, yCentroIris, raioIris, GREEN);
-        DrawCircle( xCentroIris, yCentro, raioIris / 3, BLACK);
+        if ( distanciaMouseO2 <= distancia ) {
+            xCentroO2Iris = GetMouseX();
+            yCentroO2Iris = GetMouseY();
+        }else {
+            anguloO2 = atan2( GetMouseY() - yCentroO2, GetMouseX() - xCentroO2);        
+            xCentroO2Iris = xCentroO2 + distancia * cos( anguloO2 );
+            yCentroO2Iris = yCentroO2 + distancia * sin( anguloO2 );
+        }
+
+        /*Color cor = (Color){ 
+            .r = 255,
+            .g = 0,
+            .b = 0,
+            .a = 255
+        };*/
+
+        Color cor = ColorFromHSV( anguloO1 * RAD2DEG, 1, 1 );
+
+        
+        DrawCircleLines(xCentroO1, yCentroO1, raio, BLACK);
+        DrawCircle( xCentroO1Iris, yCentroO1Iris, raioIris, cor);
+        DrawCircle( xCentroO1Iris, yCentroO1Iris, raioIris / 3, BLACK);
+
+        DrawCircleLines(xCentroO2, yCentroO2, raio, BLACK);
+        DrawCircle( xCentroO2Iris, yCentroO2Iris, raioIris, cor);
+        DrawCircle( xCentroO2Iris, yCentroO2Iris, raioIris / 3, BLACK);
 
         /*----------------------------------------------------------------------
          * A lógica do seu desenho deve terminar na linha acima.
