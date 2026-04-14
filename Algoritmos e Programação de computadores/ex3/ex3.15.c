@@ -9,9 +9,11 @@ int main(void) {
 
     if (n1 >= 0){
         for(int i = 1; i <= n1; i++){
-            n2 = (n1 * i);
-            n1 = i;
-            i = n3;
+            if (i == 1){
+                n2 = i;
+            } else {
+                n2 = n2 * i;
+            }
         }
         printf("%d! = %d", n1, n2);
 
@@ -20,7 +22,5 @@ int main(void) {
     }
 
     return 0;
+
 }
- n3 = n1 + n2;
-        n1 = n2;
-        n2 = n3;
