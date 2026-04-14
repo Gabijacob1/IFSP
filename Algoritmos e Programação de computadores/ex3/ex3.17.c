@@ -3,22 +3,19 @@
 
 int main (void){
     int n1;
-    int n2 = 0;
-    int n3;
-    int n4 = 0;
-    
+    int n2 = 1;
+    int n3 = 1;    
 
     printf("Termo desejado: ");
     scanf("%d", &n1);
-
-    for (int i = 0; i <= n1; i++){
-        n3 = n1 + n2;
-        n1 = n2;
-        n2 = n3;
-    }
-    n4 == n1;
     
-    printf("Fibonacci de %d e %d", n4, n3);
+    for (int i = 1; i <= n1; i++){
+        n3 = n2 + n3;
+        n2 = n3 - n2;
+        
+    }
+   
+    printf("Fibonacci de %d e %d", n1, n2);
 
 
     return 0;
