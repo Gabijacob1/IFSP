@@ -21,10 +21,7 @@ int main( void ) {
      *     - entrada de dados;
      *     - processamentos adicionais.
      ----------------------------------------------------*/
-    int xCentro = GetScreenWidth() / 2;
-    int yCentro = GetScreenHeight() / 2;
-    int raio = 50;
-    
+  
     // ativa a suavização (antialiasing)
     SetConfigFlags( FLAG_MSAA_4X_HINT );
 
@@ -32,7 +29,16 @@ int main( void ) {
     InitWindow( 800, 600, "Olhinhos" );
 
     // configura a quantidade de quatros por segundo da engine
-    SetTargetFPS( 60 );    
+    SetTargetFPS( 60 ); 
+
+    int xCentro = GetScreenWidth() / 2;
+    int yCentro = GetScreenHeight() / 2;
+    int raio = 100;   
+
+    int xCentroIris = xCentro + raio / 2;
+    int yCentroIris = yCentro;
+    int raioIris = 40;
+
 
     // enquanto não é sinalizado que a janela deve ser fechada
     while ( !WindowShouldClose() ) {
@@ -46,7 +52,12 @@ int main( void ) {
         /*----------------------------------------------------------------------
          * A lógica do seu desenho deve vir aqui.
          ---------------------------------------------------------------------*/
-        DrawCircleLines(xCentro, yCentro, raio, BLACK);
+        if ( IsMouseButtonPressed ( MOUSE_BUTTON_LEFT ) ){
+            printf( "%d, %d \n", GetMouseX(), GetMouseY() );
+        }
+         DrawCircleLines(xCentro, yCentro, raio, BLACK);
+        DrawCircle( xCentroIris, yCentroIris, raioIris, GREEN);
+        DrawCircle( xCentroIris, yCentro, raioIris / 3, BLACK);
 
 
         /*----------------------------------------------------------------------
