@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar e Rodar C",
+            "type": "shell",
+            "command": ".vscode/rodar.ps1",
+            "args": [
+                "-file", "${file}",
+                "-dir", "${fileDirname}",
+                "-name", "${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}
