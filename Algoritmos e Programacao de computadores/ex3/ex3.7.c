@@ -10,7 +10,7 @@ int main(void) {
         printf("%d ", i);
         }
     } else { 
-            printf("Valor incorreto (possitivo)");
+            printf("Valor incorreto (positivo)");
         }
 
     return 0;
