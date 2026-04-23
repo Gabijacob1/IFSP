@@ -8,6 +8,7 @@ int main (void){
     int n3;
     int n4;
     int n5;
+    int max;
     
     printf("N1: ");
     scanf("%d", &n1);
@@ -23,14 +24,28 @@ int main (void){
     if (n1 <= 0 || n2 <= 0 || n3 <= 0 || n4 <= 0 || n5 <= 0){
         printf("Forneca apenas numeros positivos.\n");
     } else {
-        for (int i = 1; i <= 10; i++){
-            for(int j = 1; j <= 7; j++){
+        max = n1;
+        if (n2 > max) max = n2;
+        if (n3 > max) max = n3;
+        if (n4 > max) max = n4;
+        if (n5 > max) max = n5;
 
-                if (j == 1 || j == 2){
-                    printf("*");
-                } 
-            }
-                printf("\n");
+        for (int i = max; i >= 1; i--){
+            printf("%04d  ", i);
+            if (n1 >= i) printf("*");
+            else printf(" ");
+            if (n2 >= i) printf("*");
+            else printf(" ");
+            if (n3 >= i) printf("*");
+            else printf(" ");
+            if (n4 >= i) printf("*");
+            else printf(" ");
+            if (n5 >= i) printf("*");
+            else printf(" ");
+
+            printf("\n");
+
+           
         }
 
     }
