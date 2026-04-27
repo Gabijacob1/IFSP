@@ -7,7 +7,7 @@ int main (void){
     float media;
     printf("Forneca a nota de 10 alunos: \n");
     for(int i = 1; i <= 10; i++){
-        printf("Nota %02d: ", i);
+        printf("Nota %02d: \n", i);
         scanf("%f", &n2);
         n1 = (n2 + n3);
         n2 = n3;

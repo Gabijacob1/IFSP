@@ -8,19 +8,23 @@ int main(void) {
     float n2=0;
 
     do{
-        printf("Entre com um valor: ");
+        printf("\n Entre com um valor: ");
         scanf("%f", &n1);
         if (n1 > -1){
             soma += n1;
-            quant++;
-            
+            quant++;  
         }
     }
     while(n1 > -1);
     media = soma/quant;
-    printf("Somatoria %.2f \n", soma);
-    printf("Media %.2f \n", media);
+    if (quant == 0 || media == 0 || soma == 0){
+        printf("Somatoria: 0\n");
+        printf("Media: 0\n");
+        printf("Quantidade: 0\n");
+   }else {
+    printf("Somatoria: %.2f \n", soma);
+    printf("Media: %.2f \n", media);
     printf("Quantidade: %d \n", quant);
-
+    }
     return 0;
 }
