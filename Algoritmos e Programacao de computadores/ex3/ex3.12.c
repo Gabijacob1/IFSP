@@ -17,15 +17,15 @@ int main(void) {
             n3++;
         }
     }
-        
+    printf("Numeros pares entre %d e %d: %d", n1, n2, n3);   
     } else if (n2 < n1){
         for (int i = n2; i <= n1; i++){
         if (i % 2 == 0){
             n3++;
         }
     }
+    printf("Numeros pares entre %d e %d: %d", n2, n1, n3);
 }
-    printf("Numeros pares entre %d e %d: %d", n1, n2, n3);
 
     return 0;
 }
