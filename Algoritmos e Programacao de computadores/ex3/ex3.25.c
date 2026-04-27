@@ -18,7 +18,10 @@ int main (void){
     } 
 }
 while(idade >-1);
-    
+    printf("Total de pessoas menores de 21 anos: %d\n", menosd21);
+    printf("Total de pessoas com mais de 50 anos: %d\n", maisd50);
 
+    
+return 0;
     
 }
