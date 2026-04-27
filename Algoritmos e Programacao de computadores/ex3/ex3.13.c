@@ -25,9 +25,9 @@ int main(void) {
                 n5++;
             }
         }
-        printf ("Multiplos de 2: %d \n", n3);
-        printf ("Multiplos de 3: %d \n", n4);
-        printf ("Multiplos de 4: %d \n", n5);
+        printf ("Multiplos de 2: %d\n", n3);
+        printf ("Multiplos de 3: %d\n", n4);
+        printf ("Multiplos de 4: %d\n", n5);
 
 
     } else {
@@ -42,9 +42,9 @@ int main(void) {
                 n5++;
             }
         }
-        printf ("Multiplos de 2: %d \n", n3);
-        printf ("Multiplos de 3: %d \n", n4);
-        printf ("Multiplos de 4: %d \n", n5);
+        printf ("Multiplos de 2: %d\n", n3);
+        printf ("Multiplos de 3: %d\n", n4);
+        printf ("Multiplos de 4: %d\n", n5);
     }
    
     return 0;

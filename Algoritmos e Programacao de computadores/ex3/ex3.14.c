@@ -15,14 +15,17 @@ int main(void) {
         for (int i = n1; i <= n2; i++){
             n3++;
         }
+        n4 = ((n1 + n2) * n3)/2;
+        printf("Somatorio entre %d e %d: %d", n1, n2, n4);
     } else {
         for (int i = n2; i <= n1; i++){
             n3++;
         }
+        n4 = ((n1 + n2) * n3)/2;
+         printf("Somatorio entre %d e %d: %d", n2, n1, n4);
     }
 
-    n4 = ((n1 + n2) * n3)/2;
     
-    printf("Somatorio entre %d e %d: %d", n1, n2, n4);
+    
     return 0;
 }
