@@ -20,6 +20,7 @@ int main(void) {
         printf("\n");
     }
 
+        printf("\n");
 
     for (int i = 0; i <= 5; i++){
         for (int j = 5; j > i; j--){
@@ -42,7 +43,7 @@ int main(void) {
         
         printf("\n");
     }
-   
+           printf("\n");
 
     return 0;
 
