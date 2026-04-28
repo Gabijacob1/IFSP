@@ -22,7 +22,7 @@ int main(void) {
         printf("Media: 0.00\n");
         printf("Quantidade: 0\n");
    }else {
-    printf("Somatoria: %.2f\n", soma);
+    printf("Somatorio: %.2f\n", soma);
     printf("Media: %.2f\n", media);
     printf("Quantidade: %d \n", quant);
     }
