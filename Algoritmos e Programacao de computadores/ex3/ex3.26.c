@@ -18,7 +18,7 @@ int main(void) {
     while(n1 > -1);
     media = soma/quant;
     if (quant == 0 || media == 0 || soma == 0){
-        printf("Somatoria: 0.00\n");
+        printf("Somatorio: 0.00\n");
         printf("Media: 0.00\n");
         printf("Quantidade: 0\n");
    }else {
