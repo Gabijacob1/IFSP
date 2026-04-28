@@ -18,12 +18,12 @@ int main(void) {
     while(n1 > -1);
     media = soma/quant;
     if (quant == 0 || media == 0 || soma == 0){
-        printf("Somatoria: 0\n");
-        printf("Media: 0\n");
+        printf("Somatoria: 0.00\n");
+        printf("Media: 0.00\n");
         printf("Quantidade: 0\n");
    }else {
-    printf("Somatoria: %.2f \n", soma);
-    printf("Media: %.2f \n", media);
+    printf("Somatoria: %.2f\n", soma);
+    printf("Media: %.2f\n", media);
     printf("Quantidade: %d \n", quant);
     }
     return 0;

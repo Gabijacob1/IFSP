@@ -13,17 +13,17 @@ int main(void){
     printf("1) Deposito; \n2) Saque; \n3) Fim.\n");
 
     do{
-        printf("Operacao desenada: ");
+        printf("\nOperacao desenada: ");
         scanf("%d", &n2);
 
         if (n2 == 1){
-            printf("Valor a depositar: ");
+            printf("\nValor a depositar: ");
             scanf("%f", &n3);
             n1 += n3;
         }
 
         if (n2 == 2){
-            printf("Valor a sacar: ");
+            printf("\nValor a sacar: ");
             scanf("%f", &n3);
             n1 -= n3;
         }

@@ -14,6 +14,6 @@ int main (void){
         n3 = n1;
     }
     media = n1/10;
-    printf("A media aritmetrica das dez notas e: %.2f", media);
+    printf("A media aritmetica das dez notas e: %.2f", media);
     return 0;
 }
