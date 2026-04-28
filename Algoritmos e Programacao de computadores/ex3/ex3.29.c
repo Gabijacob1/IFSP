@@ -30,8 +30,11 @@ int main(void){
 
     } while(n2 != 3);
 
-    printf("\nSaldo final: R$%.2f\n", n1);
-
+    if (n1 < 0) {
+        printf("Saldo final: -R$%.2f\n", -n1);
+    } else {
+        printf("Saldo final: R$%.2f\n", n1);
+    }
     if(n1 > 0){
         printf("Conta preferencial.\n");
     }
