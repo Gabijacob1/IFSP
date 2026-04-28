@@ -8,7 +8,7 @@ int main(void) {
     float n2=0;
 
     do{
-        printf("\n Entre com um valor: ");
+        printf("\n Entre com um valor: \n");
         scanf("%f", &n1);
         if (n1 > -1){
             soma += n1;
