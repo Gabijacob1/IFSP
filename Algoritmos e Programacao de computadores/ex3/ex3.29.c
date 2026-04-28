@@ -20,34 +20,25 @@ int main(void){
             printf("\nValor a depositar: ");
             scanf("%f", &n3);
             n1 += n3;
-        }
-
-        if (n2 == 2){
+        } else if (n2 == 2){
             printf("\nValor a sacar: ");
             scanf("%f", &n3);
             n1 -= n3;
+        }else if (n2 != 3){
+            printf("\nOperacao invalida.\n");
         }
 
     } while(n2 != 3);
-
-        if(n1 == 0 && n2 == 3){
-            printf("Saldo final: %.2f\n", n1);
-            printf("Sem Saldo.");
-        }
+               
+        printf("Saldo final: %.2f\n", n1);
     
-        if(n1 <= -1){
-            printf("Saldo final: %.2f\n", n1);
-            printf("Conta devedora.");
-        }
-
+        
         if(n1 > 0){
-            printf("Saldo final: %.2f\n", n1);
-            printf("Conta preferencial.");
-        }
-
-        if(n2 != 1 && n2 != 2 && n2 != 3){
-            printf("Saldo final: %.2f\n", n1);
-            printf("Operacao invalida.");
+            printf("Conta preferencial.\n");
+        }else if(n1 < 0){
+            printf("Conta devedora.\n");
+        } else{
+            printf("Sem Saldo.\n");
         }
 
     return 0;
