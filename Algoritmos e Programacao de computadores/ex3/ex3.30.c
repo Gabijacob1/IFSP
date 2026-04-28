@@ -14,7 +14,7 @@ int main(void){
 
         while(n2 == 0){
             printf("Nao existe divisao inteira por zero!\n");
-            printf ("Entre novemente com N2: ");
+            printf("Entre novamente com N2: ");
             scanf("%d", &n2);
         }
     

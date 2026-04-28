@@ -28,7 +28,7 @@ int main(void){
             n1 -= n3;
         }
 
-    } while(n2 == 1 || n2 == 2);
+    } while(n2 != 3);
 
         if(n1 == 0 && n2 == 3){
             printf("Saldo final: %.2f\n", n1);
