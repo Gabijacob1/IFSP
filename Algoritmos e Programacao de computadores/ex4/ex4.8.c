@@ -1,8 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*Escreva um programa que preencha um array de números inteiros de 5 posições com valores
-fornecidos pelo usuário. O programa deve exibir os números pares desse array e depois os números
-ímpares, todos na ordem em que aparecem no array*/
 
 int main() {
     int array[5];
