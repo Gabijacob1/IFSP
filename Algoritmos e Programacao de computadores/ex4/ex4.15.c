@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdbool.h>
 int main() {
     int a1[5];
     int a2[5];
     int n1[5];
-    int q = 0;
     int inter[5];
+    int q = 0;
 
     printf("Forneca os valores do primeiro array:\n");
     for ( int i = 0; i < 5; i++) {
@@ -21,7 +21,6 @@ int main() {
     for ( int i = 0; i < 5; i++) {
         for ( int j = 0; j < 5; j++) {
             if (a1[i] == a2[j]) {
-                n1[q] = a1[i];
                 bool achou = false;
                 int valor = a1[i];
                 for ( int k = 0; k < q; k++) {
@@ -30,13 +29,16 @@ int main() {
                         break;
                     }
                 }
-            }
-            }
+                if (!achou) {
+                    inter[q] = valor;
+                    q++;
+                }
+            }  
         }
+    }
     
-
     for ( int i = 0; i < q; i++) {
-        printf("arrayIntersecca[%d] = %d\n", i, n1[i]);
+        printf("arrayInterseccao[%d] = %d\n", i, inter[i]);
     }
 
     return 0;
