@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main() {
+int main(void) {
     float base;
     float expoente;
     float resultado;
