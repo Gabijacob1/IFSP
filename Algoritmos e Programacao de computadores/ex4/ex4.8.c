@@ -23,11 +23,14 @@ int main() {
         }
     }
     
-    printf("Numeros pares =\n");
+    printf("Numeros pares: ");
 
     if (q > 0) {
         for (int i = 0; i < q; i++) {
-            printf(" %d", n1[i]);
+            printf("%d", pares[i]);
+
+            if (i < q - 1)
+                printf(" ");
         }
         printf(".\n");
     } else {
@@ -35,16 +38,18 @@ int main() {
     }
 
     printf("Numeros impares: ");
-    
+
     if (t > 0) {
         for (int i = 0; i < t; i++) {
-            printf("%d ", n2[i]);
+            printf("%d", impares[i]);
+
+            if (i < t - 1)
+                printf(" ");
         }
-        printf("\n");
+        printf(".\n");
     } else {
         printf("nao ha.\n");
     }
-
 
 
     return 0;

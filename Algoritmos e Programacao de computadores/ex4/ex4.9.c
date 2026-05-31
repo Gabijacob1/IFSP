@@ -15,7 +15,7 @@ int main() {
         arrayInv[i] = array[4 - i];
     }
     for (int i = 0; i < 5; i++) {
-        printf("arrayInv[%d]: %d\n", i, arrayInv[i]);
+        printf("arrayInv[%d] = %d\n", i, arrayInv[i]);
     }
 
     return 0;
