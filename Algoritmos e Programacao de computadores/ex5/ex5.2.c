@@ -30,7 +30,10 @@ int main(void){
     for (int i = 0; i < 3; i++){
 
         for (int j = 0; j < 3; j++){
-            printf("%03d ", array1[i][j]);
+            printf("%03d", array1[i][j]);
+            if (j < 2){
+                printf(" ");
+            }
         }
 
         if (i == 1){
@@ -40,7 +43,10 @@ int main(void){
         }
 
         for (int j = 0; j < 3; j++){
-            printf("%03d ", array2[i][j]);
+            printf("%03d", array2[i][j]);
+            if (j < 2){
+                printf(" ");
+            }
         }
 
         if (i == 1){
@@ -50,7 +56,10 @@ int main(void){
         }
 
         for (int j = 0; j < 3; j++){
-            printf("%03d ", array3[i][j]);
+            printf("%03d", array3[i][j]);
+            if (j < 2){
+                printf(" ");
+            }
         }
         printf("\n");
     }

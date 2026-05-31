@@ -20,7 +20,11 @@ int main(void){
             } else {
                  valor = j - i + 1;
             }
-            printf("%3d ", valor);
+            printf("%3d", valor);
+            if(j < valor){
+                printf(" ");
+            }
+
         }
 
         printf("\n");

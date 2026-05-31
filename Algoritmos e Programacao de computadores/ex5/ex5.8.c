@@ -24,7 +24,10 @@ int main(void){
             if((n1 - j + 1) < menor){
                 menor = n1 - j + 1;
             }
-            printf("%3d ", menor);
+            printf("%3d", menor);
+            if(j < n1){
+                printf(" ");
+            }
         }
         printf("\n");
     }
