@@ -22,6 +22,7 @@ int main(void){
     }else {
         delta = b * b - 4 * a * c;
         if (delta < 0) {
+            printf("Delta: %.2f", delta);
             printf("S = {}");
         } else if (delta > 0) {
             x1 = (-b + sqrt(delta)) / (2 * a);
