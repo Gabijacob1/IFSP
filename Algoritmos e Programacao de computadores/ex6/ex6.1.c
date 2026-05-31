@@ -21,6 +21,8 @@ int main(void){
        printf("Nao existe equacao de segundo grau!");
     }else {
         delta = b * b - 4 * a * c;
+        printf("Delta: %.2f \n", delta);
+
         if (delta < 0) {
             printf("Delta: %.2f", delta);
             printf("S = {}");
