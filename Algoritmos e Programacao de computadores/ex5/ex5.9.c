@@ -21,7 +21,7 @@ int main(void){
                  valor = j - i + 1;
             }
             printf("%3d", valor);
-            if(j < valor){
+            if(j < n1){
                 printf(" ");
             }
 

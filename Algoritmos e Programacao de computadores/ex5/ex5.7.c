@@ -1,9 +1,9 @@
 # include <stdio.h>
 # include <stdlib.h>
-int main(void){
+int ain(void){
     int array[3][2];
     int array2[2][3];
-    int arraymult[3][3];
+    int arrayult[3][3];
 
 
     for (int i = 0; i < 3; i++){
@@ -21,23 +21,24 @@ int main(void){
 
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
-            arraymult[i][j] = 0;
+            arrayult[i][j] = 0;
             for (int k = 0; k < 2; k++){
-                arraymult[i][j] += array[i][k] * array2[k][j];
+                arrayult[i][j] += array[i][k] * array2[k][j];
             }
         }
     }
-    printf("A x B = \n");
+    printf("A x B =\n");
 
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
-            printf("%03d", arraymult[i][j]);
+            printf("%03d", arrayult[i][j]);
             if(j < 2){
                 printf(" ");
             }
         }
         printf("\n");
     }
+    
 
 
 

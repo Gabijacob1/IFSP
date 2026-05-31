@@ -37,7 +37,7 @@ int main(void){
         }
 
         if (i == 1){
-            printf("+ ");
+            printf(" + ");
         }else{
             printf("  ");
         }
@@ -50,7 +50,7 @@ int main(void){
         }
 
         if (i == 1){
-            printf("= ");
+            printf(" = ");
         }else{
             printf("  ");
         }
