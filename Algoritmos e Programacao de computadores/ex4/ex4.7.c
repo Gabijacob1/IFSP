@@ -15,7 +15,7 @@ int main() {
 
     printf("Forneca os valores do segundo array:\n");
     for (int i = 0; i < 5; i++) {
-        printf("array2[%d]: ", i);
+        printf("array2[%d]: \n", i);
         scanf("%d", &array2[i]);
     }
 
@@ -24,7 +24,7 @@ int main() {
     }
 
     for (int i = 0; i < 5; i++) {
-        printf("arraySoma[%d]: %d\n", i, array3[i]);
+        printf("arraySoma[%d] = %d\n", i, array3[i]);
     }
     printf("\n");
 

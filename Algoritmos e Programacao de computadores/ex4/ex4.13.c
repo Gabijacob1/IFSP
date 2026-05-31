@@ -25,7 +25,7 @@ int main(void) {
     printf("\n");
 
     for (int i = 0; i < 9; i++){
-        printf("array[%d]: %d\n", i, array[i]);
+        printf("array[%d] = %d\n", i, array[i]);
     }
 
 

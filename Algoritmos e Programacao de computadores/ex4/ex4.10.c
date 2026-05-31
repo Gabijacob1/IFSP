@@ -34,7 +34,7 @@ int main()
         if (n2 > 0){
             if (array2[i] != 0)
             {
-                printf("array2[%d]: %d\n", q++, array2[i]);
+                printf("\narray2[%d] = %d\n", q++, array2[i]);
             }
         } else {
             printf("Nao houve copia!\n");

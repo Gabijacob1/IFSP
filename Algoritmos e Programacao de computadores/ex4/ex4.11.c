@@ -28,7 +28,7 @@ int main() {
     array[0] = n2;
 
     for (int i = 0; i < n1 + 1; i++){
-        printf("array[%d]: %d\n", i, array[i]);
+        printf("array[%d] = %d\n", i, array[i]);
     }
 
     return 0;

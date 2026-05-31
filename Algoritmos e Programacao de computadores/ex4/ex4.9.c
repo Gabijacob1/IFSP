@@ -7,7 +7,7 @@ int main() {
     int arrayInv[5];
 
     for (int i = 0; i < 5; i++) {
-        printf("array[%d]: ", i);
+        printf("array[%d]: \n", i);
         scanf("%d", &array[i]);
     }
 

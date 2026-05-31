@@ -11,7 +11,7 @@ int main() {
         scanf("%d", &array[i]);
     }
 
-    printf("Buscar por: ");
+    printf("Buscar por: \n");
     scanf("%d", &n1);
 
     for (int i = 0; i < 5; i++) {
@@ -27,8 +27,15 @@ int main() {
     } else {
         printf("O valor %d foi encontrado nos indices ", n1);
         for (int i = 0; i < q; i++) {
-            printf("%d, ", result[i]);
+            if (i == 0) {
+                printf("%d", result[i]);
+            } else if (i == q - 1) {
+                printf(" e %d", result[i]);
+            } else {
+                printf(", %d", result[i]);
+            }
         }
+printf(" do array.\n");
         printf("do array.\n");
     }
 

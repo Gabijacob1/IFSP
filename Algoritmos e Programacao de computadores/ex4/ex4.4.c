@@ -14,9 +14,9 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         if(n1 == array[i]) {
-            printf("Indice: %d ACHEI\n", i);
+            printf("Indice %d: ACHEI\n", i);
         }else{
-            printf("Indice: %d NAO ACHEI\n", i);
+            printf("Indice %d: NAO ACHEI\n", i);
         }
 
     }

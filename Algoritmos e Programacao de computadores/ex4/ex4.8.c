@@ -9,7 +9,7 @@ int main() {
     int n2[5];
 
     for (int i = 0; i < 5; i++) {
-        printf("array[%d]: ", i);
+        printf("array[%d]: \n", i);
         scanf("%d", &array[i]);
     }
 
@@ -23,13 +23,13 @@ int main() {
         }
     }
     
-    printf("Numeros pares: ");
+    printf("Numeros pares =\n");
 
     if (q > 0) {
         for (int i = 0; i < q; i++) {
-            printf("%d ", n1[i]);
+            printf(" %d", n1[i]);
         }
-        printf("\n");
+        printf(".\n");
     } else {
         printf("nao ha.\n");
     }
