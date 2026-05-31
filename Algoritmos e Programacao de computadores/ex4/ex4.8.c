@@ -9,7 +9,7 @@ int main() {
     int n2[5];
 
     for (int i = 0; i < 5; i++) {
-        printf("array[%d]: \n", i);
+        printf("array[%d]: ", i);
         scanf("%d", &array[i]);
     }
 
@@ -27,7 +27,7 @@ int main() {
 
     if (q > 0) {
         for (int i = 0; i < q; i++) {
-            printf("%d", pares[i]);
+            printf("%d", n1[i]);
 
             if (i < q - 1)
                 printf(" ");
@@ -41,7 +41,7 @@ int main() {
 
     if (t > 0) {
         for (int i = 0; i < t; i++) {
-            printf("%d", impares[i]);
+            printf("%d", n2[i]);
 
             if (i < t - 1)
                 printf(" ");
