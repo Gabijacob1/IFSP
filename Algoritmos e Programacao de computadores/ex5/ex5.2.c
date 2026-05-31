@@ -39,7 +39,7 @@ int main(void){
         if (i == 1){
             printf(" + ");
         }else{
-            printf("  ");
+            printf("   ");
         }
 
         for (int j = 0; j < 3; j++){
@@ -52,7 +52,7 @@ int main(void){
         if (i == 1){
             printf(" = ");
         }else{
-            printf("  ");
+            printf("   ");
         }
 
         for (int j = 0; j < 3; j++){

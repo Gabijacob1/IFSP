@@ -1,6 +1,6 @@
 # include <stdio.h>
 # include <stdlib.h>
-int ain(void){
+int main(void){
     int array[3][2];
     int array2[2][3];
     int arrayult[3][3];
