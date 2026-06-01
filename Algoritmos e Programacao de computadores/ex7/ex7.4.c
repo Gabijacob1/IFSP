@@ -14,7 +14,7 @@ int main(void) {
 
     }
     for (int i = 0; i < 5; i++) {
-        printf("Somatorio de 1 a %d: %d", num[i], resultado[i]);
+        printf("Somatorio de 1 a %d: %d\n", num[i], resultado[i]);
     }
     return 0;
 }
