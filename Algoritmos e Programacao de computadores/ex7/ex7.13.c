@@ -17,7 +17,8 @@ int main(void){
 
         printf("n3[%d]: ", i);
         scanf("%d", &n3[i]);
-
+    }
+    for(int i = 0; i < 3; i++){
         classificaTrinca(n1[i], n2[i], n3[i]);
     }
 }
@@ -26,7 +27,7 @@ int main(void){
 void classificaTrinca(int n1, int n2, int n3){
 
     printf("\n");
-    
+
     if( n1 >= n2 && n1 >= n3){
         if (n2 >= n3){
             printf("%d, %d e %d: %d <= %d <= %d\n", n1, n2, n3, n3, n2, n1);

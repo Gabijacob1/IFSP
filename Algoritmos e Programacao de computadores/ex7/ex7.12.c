@@ -14,9 +14,10 @@ int main(void){
 
         printf("n2[%d]: ", i);
         scanf("%d", &n2[i]);
+    }
 
+    for(int i = 0; i < 3; i++){
         classificaDupla(n1[i], n2[i]);
-
     }
 
 

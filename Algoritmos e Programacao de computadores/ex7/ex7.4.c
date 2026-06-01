@@ -23,7 +23,7 @@ int lePositivo(void) {
     int n;
     scanf("%d", &n);
     while (n < 0) {
-        printf("Entre com um valor positivo: ");
+        printf("Entre com um valor positivo: \n");
         scanf("%d", &n);
     }
     return n;
