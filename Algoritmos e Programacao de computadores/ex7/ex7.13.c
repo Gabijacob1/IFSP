@@ -25,6 +25,8 @@ int main(void){
 
 void classificaTrinca(int n1, int n2, int n3){
 
+    printf("\n");
+    
     if( n1 >= n2 && n1 >= n3){
         if (n2 >= n3){
             printf("%d, %d e %d: %d <= %d <= %d\n", n1, n2, n3, n3, n2, n1);

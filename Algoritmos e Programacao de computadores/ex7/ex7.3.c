@@ -34,7 +34,7 @@ int main(void){
         }
         for (int i = 0; i < 5; i++){
             if(n1[i] == n2[i]){
-                printf("%.2f, %.2f: Os valores sao iguais\n", n1[i], n2[i]);
+                printf("%.2f, %.2f: Eles sao iguais\n", n1[i], n2[i]);
             } else{ 
                 printf("%.2f, %.2f: O maior valor e %.2f\n", n1[i], n2[i], maiorNumero(n1[i], n2[i]));
             }
