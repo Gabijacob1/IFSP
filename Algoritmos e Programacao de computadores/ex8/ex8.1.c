@@ -8,9 +8,16 @@ int main(void){
     float s;
     float m;
 
-    //entrada
+    for(int i = 0; i < 10; i++){
+        printf("n[%i]: ", i);
+        scanf("%f", &numeros[i]);
+    }
+
     somatoriaMedia(numeros, 10, &s, &m);
-    //saida
+    
+    printf("Somatorio: %.2f\n", s);
+    printf("Media: %.2f\n", m);
+
     return 0;
 }
 
