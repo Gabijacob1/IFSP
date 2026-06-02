@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 void decompoeTempo( int diaDoAno, int ano, int *mes, int *dia);
 bool ehBissexto(int ano);

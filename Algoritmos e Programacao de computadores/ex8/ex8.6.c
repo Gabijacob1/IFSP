@@ -20,7 +20,7 @@ int main (void){
 
 
     for( int i = 0; i < 5; i++){
-    printf("%.2f X %.2f = %.2f\n", n1[i], n2[i], pi[i]);
+    printf("%.2f x %.2f = %.2f\n", n1[i], n2[i], pi[i]);
     }
     return 0;
 }
