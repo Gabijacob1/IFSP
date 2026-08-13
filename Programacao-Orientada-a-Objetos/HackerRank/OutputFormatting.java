@@ -5,9 +5,10 @@ public class OutputFormatting {
     public static <string> void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();
-        double d = scan.nexdouble();
-        string s = scan.nexString();
+        double d = scan.nextDouble();
 
+        scan.nextLine();
+        String s = scan.nextLine();
 
 
         System.out.println("String: " + s);
